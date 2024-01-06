@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Água</title>
+    <link rel="icon" type="x-icon" href="favicon.png">
+    <!--https://icons8.com/icon/MhkU1HOeZffe/water Water icon by https://icons8.com Icons8-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Quanto de água beber:</h1>
+        <form action="/" id="formulario" method="post">
+            <label for="idade"></label>
+            <input type="text" id="idade" name="idade" placeholder="IDADE">
+            
+            <label for="peso"></label>
+            <input type="text" id="peso" name="peso" placeholder="PESO">
+
+            <label class="atleta-label" for="atleta">Você pratica mais de 2 horas de exercícios físicos intensos por dia?</label>
+            <input type="checkbox" name="atleta" id="atleta">
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="resultado"></div>
+        <button onclick="info()">Informações</button>
+        <section>
+            <div class="info" id="hide">
+                <p><strong> Carboidratos:</strong> O glicogênio, uma forma de armazenamento de carboidratos no corpo, tem a capacidade de
+                     reter cerca de 3 a 4 gramas de água por grama. Isso significa que os carboidratos desempenham um papel
+                      importante na manutenção da hidratação do corpo.<br>
+                    <strong> Proteínas:</strong> O consumo de proteínas pode ter efeitos adversos na saúde renal. 
+                    Especialmente em pessoas que <strong> não estão adequadamente hidratadas ou que já têm doenças renais pré-existentes</strong>,
+                     a ingestão elevada de proteínas pode sobrecarregar os rins. Isso pode levar a problemas como cálculos renais
+                      e até mesmo doença renal crônica. Portanto, no caso de ingerir a quantidade de proteínas que os atletas normalmente
+                    ingerem <i>(1.4 a 2 gramas de proteína por KG corporal)</i>, deve equilibrar a quantidade de água para não ter esses efeitos,
+                     especialmente para depois não por a culpa na sua Creatina de Cavalo do pote de 3KG 😀👍.</p>
+                <button onclick="fontes()">Ver fontes</button><br>
+            </div>
+        </section>
+        <section class="fonte">
+            <div class="fonte-none" id="hide">
+                <p>fontes das informações:<br>
+
+                    <br>relação entre glicogênio e água:<br>
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/1615908/" target="_blank">
+                            Glycogen storage: illusions of easy weight loss, excessive weight regain, and distortions in estimates of body composition </a>(Cambridge University Press)<br>
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4945249/" target="_blank">
+                        Glycogen and its metabolism: some new developments and old themes</a> (Biochemical Journal)<br>
+                    
+                    <br>consumo de proteínas e a saúde renal:<br>
+                    <br> <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1262767/" target="_blank">
+                            Dietary protein intake and renal function</a> National Institutes of Health<br>
+                    <br> <a href="https://pubmed.ncbi.nlm.nih.gov/15558517/" target="_blank">
+                        High-Protein Diets: Potential Effects on the Kidney in Renal Health and Disease</a>
+                    </p>
+            </div>
+        </section>
+    </section>
+    
+    <script src="app.js"></script>
+</body>
+</html>

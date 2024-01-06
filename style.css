@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&display=swap');
+:root {
+  --primary-color: rgb(4, 118, 170);
+  --primary-color-darker: rgb(48, 10, 187);
+  --water-color: rgb(0, 255, 255);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 800;
+    color: #75cfc3;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+  border: 0px;
+  border-bottom: var(--water-color) 1px solid;
+}
+
+form input:focus {
+  outline: 1px solid var(--water-color);
+  border-bottom: none;
+}
+
+form button, button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+.atleta-label{
+    font-size: 18px;
+}
+#atleta{
+    transform: scale(0.9);
+}
+.info, p{
+    font-size: 18px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 300;
+}
+#hide{
+    display: none;
+}
+.fonte{
+    font-family: 'Big Shoulders Inline Text', sans-serif;
+    font-weight: 300;
+}
+a{
+    text-decoration: none;
+    color: blue;
+    font-size: 17px;
+    border-bottom: 1px solid var(--water-color);
+}
+.paragrafo-resultado, .bad {
+  background: rgb(48, 109, 189);
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.bad {
+  background: rgb(202, 114, 114);
+}
+@media only screen and (max-width: 640px){
+    .container{
+        width: 90%;
+    }
+    h1{
+        font-size: 24px;
+    }
+    button {
+        height: 40px;
+        background-color: rgb(39, 156, 117);
+      }
+    form input{
+        transform: scale(1.1);
+        border: 0px;
+        border-bottom: var(--water-color) 1px solid;
+    }
+    #formulario input, #formulario button{
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    .atleta-label{
+        font-size: 15px;
+    }
+    #atleta{
+        transform: scale(0.7);
+    }
+    .paragrafo-resultado{
+        font-size: 19px;
+    }
+}
